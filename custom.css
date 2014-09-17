@@ -1,0 +1,20 @@
+#logo{
+	max-width: 322px;
+}
+.ui-title{
+	margin:0!important;
+}
+.center{
+	text-align:center;
+}
+#home{
+	background-image:url("images/bg.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:center bottom;
+}
+.multi{
+    text-overflow: initial !important;
+    overflow: visible !important;
+    white-space: normal !important;
+}
