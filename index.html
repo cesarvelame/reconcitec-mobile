@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="custom.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.mobile-1.4.4.min.js"></script>
+	<script src="js/handlebars.js"></script>
 </head>
 <body>
 <div data-role="page" id="home" data-url="home" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
@@ -30,347 +31,9 @@
 			<li><a href="#dia21">Dia 21/10 (terça-feira)</a></li>
 			<li><a href="#dia22">Dia 22/10 (quarta-feira)</a></li>
 			<li><a href="#dia23">Dia 23/10 (quinta-feira)</a></li>
+			<li><a href="#tudo">Tudo</a></li>
 		</ul>
 
-	</div>
-
-</div>
-
-<div data-role="page" data-url="dia21" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
-
-	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
-       <h1>
-         <a href="#home">
-           <img id="logo" src="images/logo.png" alt="Logo" />
-         </a>
-       </h1>
-    </div>
-
-	<div role="main" class="ui-content">
-	
-	<h2>Dia 21/10 (terça-feira)</h2>
-		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
-			<li data-role="list-divider">14h às 16h</li>
-				<li>
-					<h2>Credenciamento</h2>
-				</li>
-			<li data-role="list-divider">16h às 18h</li>
-				<li>
-					<h2>Cerimônia de Abertura</h2>
-				</li>
-				<li>
-					<h2>Conferência de Abertura</h2>
-					<p class="multi"><strong>Universidade – Empresa: desafios na educação superior no Brasil</strong><p class="multi">
-					<p class="multi">Dr. Armando Zeferino Milioni, Secretário Adjunto de Desenvolvimento Tecnológico e Inovação / MCTI</p>
-				</li>
-		</ul>
-	</div>
-
-</div>
-
-<div data-role="page" data-url="dia22" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
-
-	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
-		<h1>
-         <a href="#home">
-           <img id="logo" src="images/logo.png" alt="Logo" />
-         </a>
-       </h1>
-    </div>
-
-	<div role="main" class="ui-content">
-	
-	<h2>Dia 22/10 (quarta-feira)</h2>
-		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
-			<li data-role="list-divider">08h30min às 09h30min</li>
-				<li>
-					<h2>Conferência</h2>
-					<p class="multi"><strong>Access and Inclusion in Higher Education: Achieving Social Justice in the 21st Century</strong><p class="multi">
-					<p class="multi"><strong>Acesso e inclusão na educação superior: alcançando justiça social no século 21</strong><p class="multi">
-					<p class="multi">Dr. Luis Ricardo Fraga, Associate Vice Provost For Faculty Advancemente,University of Washington, Seattle, WA</p>
-				</li>
-			<li data-role="list-divider">10h às 15h30min.</li>
-				<li>
-					<h2>Feira de Ciências</h2>
-					<p class="multi"><strong>Ciência e Tecnologia na Sala de Aula da Educação Básica</strong><p class="multi">					
-				</li>
-			<li data-role="list-divider">09h30min. às 11h30min.</li>
-				<li>
-					<h2>Painéis</h2>
-					<p class="multi"><strong>1 - Interdisciplinaridade na Graduação e Pós-Graduação</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Georgina Gonçalves dos Santos (UFRB)</p>
-					<p class="multi">1 - Interdisciplinaridade no Ensino Superior: Graduação e Pós-Graduação</p>
-					<p class="multi">Dr. Manuel Fernando Palácios da Cunha e Melo (UFJF)</p>
-					<p class="multi">2 - Bacharelados Interdisciplinares – Experiência na UFBA e na Universidade Federal do Sul da Bahia</p>
-					<p class="multi">Dr. Naomar Almeida Filho (UFSB)</p>
-					<p class="multi">3- Interdisciplinaridade: do que estamos falando?</p>
-					<p class="multi">Dra. Sônia Maria Rocha Sampaio (UFBA - EISU)</p>
-					<p class="multi"><strong>2 - Educação</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Custódia Alexandra Almeida Martins (UMinho)</p>
-					<p class="multi">1 - Ensino da Filosofia no Brasil</p>
-					<p class="multi">Dr. João Carlos Salles (UFBA)</p>
-					<p class="multi">2 - O novo currículo do ensino médio por áreas de conhecimento: qual será o futuro das atuais licenciaturas?</p>
-					<p class="multi">Dra. Sandra Regina Soares (UNEB)</p>
-					<p class="multi">3 - Educação Básica</p>
-					<p class="multi">Dra. Josenilda Maria Maués da Silva (UFPA)</p>	
-					<p class="multi"><strong>3 - Ciência, Tecnologia e Inovação</strong><p class="multi">
-					<p class="multi">Moderador: Dr. Jacson Machado Nunes (UFRB)</p>
-					<p class="multi">1 - Ciência, Tecnologia e Inovação no Estado da Bahia</p>
-					<p class="multi">Dr. Roberto Paulo Machado Lopes - Diretor Geral da FAPESB</p>
-					<p class="multi">2 - A importância da propriedade industrial no Sistema Inovativo</p>
-					<p class="multi">Dr. Celso Luiz Salgueiro Lage (INPI)</p>
-					<p class="multi">3 - Código Nacional de Ciência, Tecnologia e Inovação CTI: Visão parlamentar e acadêmica da CTI</p>
-					<p class="multi">Deputado Dr. Siba Machado Oliveira e Dr. Gesil Sampaio Amarante Segundo (UESC)</p>	
-					<p class="multi"><strong>4 - Agricultura Familiar (2014 - Ano Internacional da Agricultura Familiar)</strong><p class="multi">
-					<p class="multi">Moderador: Dr. Alexandre A. Almassy Junior (UFRB)</p>
-					<p class="multi">1 - Cultura, Natureza, Soberania Alimentar: Agricultura Familiar</p>
-					<p class="multi">Dr. Afonso Peche Filho - PqC do Instituto Agronômico de Campinas - Centro de Engenharia e Automação</p>
-					<p class="multi">2 - Avanços e Desafios no Ano Internacional da Agricultura Familiar</p>
-					<p class="multi">Dr. João da Cruz de Souza Santos – Secretário de Política Agrícola / FETAG</p>
-					<p class="multi">3 - Agricultura Familiar: avanços e desafios para o Estado da Bahia</p>
-					<p class="multi">Dr. Wilson José Vasconcelos Dias - Diretor da Secretaria Familiar da Bahia / SUAF</p>	
-					<p class="multi"><strong>5 - Pesquisa e Pós-Graduação no Brasil</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Ana Cristina Fermino Soares (UFRB)</p>
-					<p class="multi">1 - Pós-Graduação e Avaliação no Brasil</p>
-					<p class="multi">Dr. Lívio Amaral - Diretor de Avaliação da CAPES</p>
-					<p class="multi">2 - Plataforma Sucupira, Programa de Bolsas e Ações da CAPES</p>
-					<p class="multi">Dr. Adalberto Grassi Carvalho, Diretoria de Bolsas da CAPES</p>
-					<p class="multi">3 - CNPq e a Pesquisa no Brasil</p>
-					<p class="multi">Dr. Guilherme Sales Soares de Azevedo – Diretor de Engenharias, Ciências Exatas e Humanas e Sociais / DEHS – CNPq</p>
-					<p class="multi"><strong>6 - Avanços no estudo de insetos sociais</strong><p class="multi">
-					<p class="multi">Moderador: MSc. Paula Dib de Carvalho (AT/CNPq/UFRB-Herbário-Insecta)</p>
-					<p class="multi">1 - Chemical recognition in ants: solving a 100 year old mystery</p>
-					<p class="multi">PhD. Stephen John Martin (University of Salford, Manchester, UK – PVE/CNF/CNPq/UFRB-Insecta</p>
-					<p class="multi">2 - Sua majestade está em casa? Monarquia química em Apis mellifera</p>
-					<p class="multi">Dra. Maria Emilene Correia de Oliveira (PDE/CSF/CAPES - University of Salford, Manchester, UK)</p>
-					<p class="multi">3 - Impacto de pesticidas no comportamento de abelhas</p>
-					<p class="multi">Dr. Cherre Sade B. Da Silva: (PDJ/CSF/CNPq/UFRB-Insecta)</p>					
-				</li>
-			<li data-role="list-divider">10h15min. às 10h30min.</li>
-				<li>
-					<h2>Intervalo / Exposições</h2>					
-				</li>
-			<li data-role="list-divider">10h30min. às 12h30min.</li>
-				<li>
-					<h2>Minicursos</h2>		
-					<p class="multi"><strong>MC 1: A enfermagem na promoção da humanização do parto e nascimento</strong><p class="multi">
-					<p class="multi">Minist.: Ariane Cedraz Morais, Maiana Rodrigues de Almeida Sampaio e Rafaela Argolo</p>	
-					<p class="multi"><strong>MC 2: Biossegurança em laboratórios de ensino</strong><p class="multi">
-					<p class="multi">Minist.: Alexsandro Gomes, Flaviane Souza, Roberval Assunção, Taiana Conceição</p>
-					<p class="multi"><strong>MC 3: Citogenética Humana</strong><p class="multi">
-					<p class="multi">Minist.: Jacqueline Braga</p>
-					<p class="multi"><strong>MC 4: Atividades Práticas sobre Biologia de Fungos para o Ensino Básico</strong><p class="multi">
-					<p class="multi">Minist.: Phellippe Marbach</p>
-					<p class="multi"><strong>MC 5: Introdução a AUTOCAD 3D</strong><p class="multi">
-					<p class="multi">Minist.: Renê Medeiros de Sousa</p>
-					<p class="multi"><strong>MC 6: INTRODUÇÃO AO LABORATÓRIO DE QUÍMICA</strong><p class="multi">
-					<p class="multi">Minist. Francisco de Souza Fadigas e Raiene de Oliveira Leal</p>
-					<p class="multi"><strong>MC 7: Biodiesel: Uma introdução as rotas de obtenção</strong><p class="multi">
-					<p class="multi">Minist.: Sérgio Rocha</p>
-					<p class="multi"><strong>MC 8: Instalações Hidráulicas Para Pequenas Residências</strong><p class="multi">
-					<p class="multi">Minist.: Francis Valter Pêpe França</p>
-					<p class="multi"><strong>MC 9: Curso introdutório de redação científica e estratégia de leitura</strong><p class="multi">
-					<p class="multi">Minist.: Patrícia Verônica Nascimento Dias Fernandes</p>
-					<p class="multi"><strong>MC 10: Pesquisa científica e fontes de informação na web</strong><p class="multi">
-					<p class="multi">Minist.: Bárbara Coelho Neves</p>
-					<p class="multi"><strong>MC 11: Noções básicas de Redação de patentes</strong><p class="multi">
-					<p class="multi">Minist.: Ferlando Lima Santos e Edilson Araújo Pires</p>
-					<p class="multi"><strong>MC 12: Pré-melhoramento de plantas</strong><p class="multi">
-					<p class="multi">Minist.: Sebastião de Oliveira e Silva</p>
-					<p class="multi"><strong>MC 13: Novas abordagens na análise estatística de dados</strong><p class="multi">
-					<p class="multi">Minist.: Carlos Alberto da Silva Ledo</p>
-					<p class="multi"><strong>MC 14: Oficina de Ginástica Terapêutica Chinesa e Tai Chi Chuan</strong><p class="multi">
-					<p class="multi">Minist.: Anatalio Pereira de Jesus</p>
-					<p class="multi"><strong>MC 15: Bioinformática: Algoritmos usados nas análises de mutações no genoma humano</strong><p class="multi">
-					<p class="multi">Minist.: Antonio Teixeira e Clever Gomes Cardoso</p>
-					<p class="multi"><strong>MC 16: Comitê de Ética e Instrumentação para plataforma Brasil e TCLE</strong><p class="multi">
-					<p class="multi">Minist.: Cíntia Mota Cardeal</p>					
-				</li>
-			<li data-role="list-divider">12h30min. às 13h50min.</li>
-				<li>
-					<h2>Intervalo / Exposições</h2>					
-				</li>
-			<li data-role="list-divider">14h às 15h30min.</li>
-				<li>
-					<h2>Palestras</h2>	
-					<p class="multi"><strong>1 - Consciência fonológica, memória operacional e problemas de leitura e escrita: como avaliar e intervir</strong><p class="multi">
-					<p class="multi">Dra. Ana Flávia Soares Conceição (UFRB/CCS)</p>	
-					<p class="multi"><strong>2 - O trabalho precário na Sociedade Contemporânea: uma reflexão crítica</strong><p class="multi">
-					<p class="multi">Dr. Bruno José Rodrigues Durães (UFRB/CETENS)</p>	
-					<p class="multi"><strong>3 - Educação Física e Relações étnico-Raciais. Qual o nosso lugar</strong><p class="multi">
-					<p class="multi">Dra. Maria Cecília de Paula Silva (UFBA/FACED)</p>
-					<p class="multi"><strong>4 - Uma Década de Agromatemática</strong><p class="multi">
-					<p class="multi">Dr. Angel Ramon Sanchez Delgado (UFRRJ/Departamento de Matemática)</p>
-					<p class="multi"><strong>5 - Galáxias Espirais e a Possibilidade de Matéria Escura</strong><p class="multi">
-					<p class="multi">Dr. Juliano Pereira Campos (UFRB/CETENS)</p>
-					<p class="multi"><strong>6 - Acesso aos recursos genéticos: biodiversidade e propriedade intelectual</strong><p class="multi">
-					<p class="multi">Dr. Carlos Alberto Pitaluga (CNPq/Coordenação do Sistema de Autorização de Acesso ao Patrimônio Genético)</p>
-					<p class="multi"><strong>7 - Global collapse of Honeybees</strong><p class="multi">
-					<p class="multi">PhD. Stephen John Martin (University of Salford, Manchester, UK – PVE/CNF/CNPq/UFRB-Insecta</p>
-					<p class="multi">Moderadora: Dra. Maria Emilene Correia de Oliveira (PDE/CSF/CAPES - University of Salford, Manchester, UK)</p>
-				</li>
-			<li data-role="list-divider">15h30min. às 17h30min.</li>
-				<li>
-					<h2>Apresentação de Trabalhos</h2>	
-					<p class="multi">Oral e Pôster</p>
-				</li>	
-			<li data-role="list-divider">17h30min. às 18h30min.</li>
-				<li>
-					<h2>Atividade Cultural</h2>	
-					<p class="multi">Oral e Pôster</p>
-				</li>					
-		</ul>
-	</div>
-
-</div>
-
-<div data-role="page" data-url="dia23" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
-
-	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
-       <h1>
-         <a href="#home">
-           <img id="logo" src="images/logo.png" alt="Logo" />
-         </a>
-       </h1>
-    </div>
-
-	<div role="main" class="ui-content">
-	
-	<h2>Dia 23/10 (quinta-feira)</h2>
-		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
-			<li data-role="list-divider">08h30min. às 09h30min.</li>
-				<li>
-					<h2>Conferência</h2>
-					<p class="multi"><strong>Educação e Responsabilidade Social</strong><p class="multi">
-					<p class="multi">Dr. Jorge Hamilton Sampaio</p>
-				</li>
-			<li data-role="list-divider">10h às 15h30min.</li>
-				<li>
-					<h2>Feira das Ciências</h2>
-					<p class="multi"><strong>Ciência e Tecnologia na Sala de Aula da Educação Básica</strong><p class="multi">
-				</li>
-			<li data-role="list-divider">09h30min. às 11h30min.</li>
-				<li>
-					<h2>Painéis</h2>
-					<p class="multi"><strong>6 - Inserção Social</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Tatiana Veloso (UFRB)</p>
-					<p class="multi">1 - Educação do Campo e Educação Quilombola<p class="multi">
-					<p class="multi">Dr. Salomão Antônio Mufarrej Hage (UFPA)</p>
-					<p class="multi">2 - Ensino de Matemática na Educação do Campo: desafios e perspectivas<p class="multi">
-					<p class="multi">Dr. Nilson Antônio Ferreira Roseira (UFRB/CETENS)</p>
-					<p class="multi">3 - A Educação enquanto elemento de transformação<p class="multi">
-					<p class="multi">Dr. Marcus Bessa de Menezes (CDSA/UFCG)</p>
-					<p class="multi"><strong>7 - Educação e Tecnologia</strong><p class="multi">
-					<p class="multi">Moderador: Dr. Celso Borges (UFRB)</p>
-					<p class="multi">1 - Acessibilidade e Tecnologia Assistiva: condições necessárias à inclusão e redução das desigualdades<p class="multi">
-					<p class="multi">Dr. Teófilo Galvão Filho (UFRB/CETENS)</p>
-					<p class="multi">2 - Tecnologia e Inovação nas Engenharias: Desafios para a Educação Superior<p class="multi">
-					<p class="multi">Dr. Rafael Lucchesi - Diretor do SENAI</p>
-					<p class="multi">3 - Inovação e Tecnologia na Educação Superior<p class="multi">
-					<p class="multi">Palestrante a confirmar</p>
-					<p class="multi"><strong>8 - Programas de formação em iniciação científica, tecnológica e empreendedorismo</strong><p class="multi">
-					<p class="multi">Moderador: Dr. Kilder Leite Ribeiro (UFRB)</p>
-					<p class="multi">1 - Programas de Iniciação Científica e Tecnológica CNPq<p class="multi">
-					<p class="multi">Dra. Lucimar Batista de Almeida (CNPq)</p>
-					<p class="multi">2 - Empresas Júnior<p class="multi">
-					<p class="multi">Dra. Mariana Nunciaroni Zanatta Inglez - Parque Científico e Tecnológico da Unicamp (Empresas Filhas da Unicamp)</p>
-					<p class="multi">3 - Incubadora de Empresas<p class="multi">
-					<p class="multi">Dr. Jorge Henrique Oliveira Sales (UESC)</p>
-					<p class="multi"><strong>9 - Experiências vivenciadas por discentes de graduação e pós-graduação</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Soraia B. A. Fonteles (UFRB)</p>
-					<p class="multi">1 - Alunos de Graduação que participaram do Programa Ciências sem Fronteiras<p class="multi">
-					<p class="multi">2 - Alunos Pós-Graduação que participaram do Doutorado Sanduiche no Exterior<p class="multi">
-					<p class="multi"><strong>10 - Vida Estudantil: pesquisa e experiências inovadoras de formação</strong><p class="multi">
-					<p class="multi">Moderador: Dra. Sonia Sampaio (UFBA)</p>
-					<p class="multi">1 - Observatório da Vida Estudantil (OVE): UFBA/UFRB<p class="multi">
-					<p class="multi">Dra. Georgina Gonçalves dos Santos e Dra. Lys Maria Vinhaes Dantas (UFRB)</p>
-					<p class="multi">2 - PET/UFRB e Recôncavo em Conexão e PET Acesso, Permanência e Pós-Permanência no Ensino Superior na UFRB<p class="multi">
-					<p class="multi"> Dra. Rita de Cássia Dias Pereira Alves e Dr. Claudio Orlando Costa do Nascimento (UFRB)</p>
-					<p class="multi">Relato de alunos que ingressaram na UFRB por cotas e com assistência estudantil<p class="multi">
-					<p class="multi"><strong>Lançamento do Livro: Currículo, Formação e Universidade e Mostra dos Livros do OVE</strong><p class="multi">
-					<p class="multi"><strong>11 - Doenças Negligenciadas (DN) </strong><p class="multi">
-					<p class="multi">Moderador: Dra. Sibelle Tozedo (UFRB)</p>
-					<p class="multi">1 - Fatores ambientais e doenças negligenciadas<p class="multi">
-					<p class="multi"> Dr. Marco Tulio Garcia Zapata(IPTEST/UFG)</p>
-					<p class="multi">2 - Aspectos médico-sociais e doenças negligenciadas<p class="multi">
-					<p class="multi">Dr. Cleudson Castro (NMT/FM/UnB)</p>
-					<p class="multi">3 - Porque é tão difícil combater e prevenir doenças negligenciadas?<p class="multi">
-					<p class="multi">Dr. Antonio Teixeira - LMPDC/NPPDN/UnB/PVNS/CAPES/UFRB</p>	
-				</li>					
-			<li data-role="list-divider">10h às 15h30min.</li>
-				<li>
-					<h2>Intervalo / Exposições</h2>
-				</li>					
-			<li data-role="list-divider">10h30min. às 12h30min.</li>
-				<li>
-					<h2>Minicursos</h2>		
-					<p class="multi"><strong>MC 1: A enfermagem na promoção da humanização do parto e nascimento</strong><p class="multi">
-					<p class="multi">Minist.: Ariane Cedraz Morais, Maiana Rodrigues de Almeida Sampaio e Rafaela Argolo</p>	
-					<p class="multi"><strong>MC 2: Biossegurança em laboratórios de ensino</strong><p class="multi">
-					<p class="multi">Minist.: Alexsandro Gomes, Flaviane Souza, Roberval Assunção, Taiana Conceição</p>
-					<p class="multi"><strong>MC 3: Citogenética Humana</strong><p class="multi">
-					<p class="multi">Minist.: Jacqueline Braga</p>
-					<p class="multi"><strong>MC 4: Atividades Práticas sobre Biologia de Fungos para o Ensino Básico</strong><p class="multi">
-					<p class="multi">Minist.: Phellippe Marbach</p>
-					<p class="multi"><strong>MC 5: Introdução a AUTOCAD 3D</strong><p class="multi">
-					<p class="multi">Minist.: Renê Medeiros de Sousa</p>
-					<p class="multi"><strong>MC 6: INTRODUÇÃO AO LABORATÓRIO DE QUÍMICA</strong><p class="multi">
-					<p class="multi">Minist. Francisco de Souza Fadigas e Raiene de Oliveira Leal</p>
-					<p class="multi"><strong>MC 7: Biodiesel: Uma introdução as rotas de obtenção</strong><p class="multi">
-					<p class="multi">Minist.: Sérgio Rocha</p>
-					<p class="multi"><strong>MC 8: Instalações Hidráulicas Para Pequenas Residências</strong><p class="multi">
-					<p class="multi">Minist.: Francis Valter Pêpe França</p>
-					<p class="multi"><strong>MC 9: Curso introdutório de redação científica e estratégia de leitura</strong><p class="multi">
-					<p class="multi">Minist.: Patrícia Verônica Nascimento Dias Fernandes</p>
-					<p class="multi"><strong>MC 10: Pesquisa científica e fontes de informação na web</strong><p class="multi">
-					<p class="multi">Minist.: Bárbara Coelho Neves</p>
-					<p class="multi"><strong>MC 11: Noções básicas de Redação de patentes</strong><p class="multi">
-					<p class="multi">Minist.: Ferlando Lima Santos e Edilson Araújo Pires</p>
-					<p class="multi"><strong>MC 12: Pré-melhoramento de plantas</strong><p class="multi">
-					<p class="multi">Minist.: Sebastião de Oliveira e Silva</p>
-					<p class="multi"><strong>MC 13: Novas abordagens na análise estatística de dados</strong><p class="multi">
-					<p class="multi">Minist.: Carlos Alberto da Silva Ledo</p>
-					<p class="multi"><strong>MC 14: Oficina de Ginástica Terapêutica Chinesa e Tai Chi Chuan</strong><p class="multi">
-					<p class="multi">Minist.: Anatalio Pereira de Jesus</p>
-					<p class="multi"><strong>MC 15: Bioinformática: Algoritmos usados nas análises de mutações no genoma humano</strong><p class="multi">
-					<p class="multi">Minist.: Antonio Teixeira e Clever Gomes Cardoso</p>
-					<p class="multi"><strong>MC 16: Comitê de Ética e Instrumentação para plataforma Brasil e TCLE</strong><p class="multi">
-					<p class="multi">Minist.: Cíntia Mota Cardeal</p>					
-				</li>
-			<li data-role="list-divider">12h30min. às 13h50min.</li>
-				<li>
-					<h2>Intervalo / Exposições</h2>
-				</li>
-			<li data-role="list-divider">14h às 15h30min.</li>
-				<li>
-					<h2>Palestras</h2>
-					<p class="multi"><strong>1 - Mitos e Dilemas sobre drogas: questão de segurança ou questão de saúde pública?</strong><p class="multi">
-					<p class="multi">Dr. João Mendes de Lima Junior (UFRB)</p>
-					<p class="multi"><strong>2 - Inovar é preciso?</strong><p class="multi">
-					<p class="multi">Dr. André Gustavo de Araújo Barbosa (SEBRAE)</p>
-					<p class="multi"><strong>3 - Ação das Drogas Antimicrobianas</strong><p class="multi">
-					<p class="multi">Dra. Fernanda de Sousa Bernardes (UFRB/CCAAB)</p>
-					<p class="multi"><strong>4 - Aspectos Éticos em pesquisa com seres humanos</strong><p class="multi">
-					<p class="multi">Dra. Cíntia Mota Cardeal (Comitê de Ética em Pesquisa/UFRB)</p>
-					<p class="multi"><strong>5 - Visão e papel da Indústria Farmacêutica Nacional no desenvolvimento de fitoterápicos</strong><p class="multi">
-					<p class="multi">Dr. Olavo Souza Rodrigues (Grupo Natulab)</p>
-				</li>
-			<li data-role="list-divider">15h30min. às 17h30min.</li>
-				<li>
-					<h2>Apresentação de Trabalhos</h2>
-					<p class="multi">Oral e Pôster</p>
-				</li>	
-			<li data-role="list-divider">17h30min. às 18h30min.</li>
-				<li>
-					<h2>Encerramento</h2>
-					<h2>Menção Honrosa e Premiação</h2>
-					<h2 class="multi">Lançamento de Livros Publicados pela UFRB</h2>
-					<h2>Atividade Cultural</h2>
-				</li>				
-		</ul>
 	</div>
 
 </div>
@@ -384,10 +47,11 @@
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
+	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
-	
+
 	<h2>Sobre a RECONCITEC</h2>
 		<p class="multi">Congregar estudantes, professores e pesquisadores das instituições de ensino superior, institutos de pesquisa e o público em geral, promovendo a difusão e estimulando o debate a respeito das atividades científicas e tecnológicas desenvolvidas em âmbito nacional e especificamente no Recôncavo Baiano.</p>
 	<h4>Objetivo</h4>
@@ -400,10 +64,162 @@
 		<p class="multi">Cruz das Almas, Universidade Federal do Recôncavo da Bahia</p>
 	<h4>Público-Alvo</h4>
 		<p class="multi">Discentes, Docentes e Técnicos da UFRB e das instituições parceiras</p>
-	
+
 	</div>
 
 </div>
+
+<div data-role="page" id="tudo" data-url="tudo" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+
+	<div data-role="header">
+	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
+       <h1>
+         <a href="#home">
+           <img id="logo" src="images/logo.png" alt="Logo" />
+         </a>
+       </h1>
+	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
+    </div>
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview" id="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
+		</ul>
+
+	</div>
+
+</div>
+
+<div data-role="page" id="dia21" data-url="dia21" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+
+	<div data-role="header">
+	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
+       <h1>
+         <a href="#home">
+           <img id="logo" src="images/logo.png" alt="Logo" />
+         </a>
+       </h1>
+	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
+    </div>
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview" id="listview21" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
+		</ul>
+
+	</div>
+
+</div>
+
+<div data-role="page" id="dia22" data-url="dia22" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+
+	<div data-role="header">
+	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
+       <h1>
+         <a href="#home">
+           <img id="logo" src="images/logo.png" alt="Logo" />
+         </a>
+       </h1>
+	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
+    </div>
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview" id="listview22" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
+		</ul>
+
+	</div>
+
+</div>
+
+<div data-role="page" id="dia23" data-url="dia23" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+
+	<div data-role="header">
+	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
+       <h1>
+         <a href="#home">
+           <img id="logo" src="images/logo.png" alt="Logo" />
+         </a>
+       </h1>
+	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
+    </div>
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview" id="listview23" data-inset="true" data-filter="true" data-filter-placeholder="Buscar...">
+		</ul>
+
+	</div>
+
+</div>
+
+<script>
+
+$(document).on('pageinit', '#tudo', function(){
+		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/od6/public/values?alt=json";
+    $.getJSON(url, function (data){
+                  var output = '';
+                      $.each(data.feed.entry, function (index, value) {
+  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
+												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+						});
+                      $('#listview').html(output).listview('refresh');
+
+            });
+});
+
+$(document).on('pageinit', '#dia21', function(){
+		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D21";
+    $.getJSON(url, function (data){
+                  var output = '';
+                      $.each(data.feed.entry, function (index, value) {
+  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
+												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+						});
+                      $('#listview21').html(output).listview('refresh');
+
+            });
+});
+
+$(document).on('pageinit', '#dia22', function(){
+		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D22";
+    $.getJSON(url, function (data){
+                  var output = '';
+                      $.each(data.feed.entry, function (index, value) {
+  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
+												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+						});
+                      $('#listview22').html(output).listview('refresh');
+
+            });
+});
+
+$(document).on('pageinit', '#dia23', function(){
+		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D23";
+    $.getJSON(url, function (data){
+                  var output = '';
+                      $.each(data.feed.entry, function (index, value) {
+  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
+												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
+												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+						});
+                      $('#listview23').html(output).listview('refresh');
+
+            });
+});
+
+</script>
 
 </body>
 </html>
