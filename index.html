@@ -64,7 +64,8 @@
 		<p class="multi">Cruz das Almas, Universidade Federal do Recôncavo da Bahia</p>
 	<h4>Público-Alvo</h4>
 		<p class="multi">Discentes, Docentes e Técnicos da UFRB e das instituições parceiras</p>
-
+	<h4>Site</h4>
+		<p class="multi"><a href="http://www.ufrb.edu.br/reconcitec">www.ufrb.edu.br/reconcitec</a></p>
 	</div>
 
 </div>
@@ -160,7 +161,7 @@ $(document).on('pageinit', '#tudo', function(){
     $.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
-  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+  											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
@@ -176,7 +177,7 @@ $(document).on('pageinit', '#dia21', function(){
     $.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
-  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+  											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
@@ -192,12 +193,12 @@ $(document).on('pageinit', '#dia22', function(){
     $.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
-  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+  											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
-						});
+						})
                       $('#listview22').html(output).listview('refresh');
 
             });
@@ -208,7 +209,7 @@ $(document).on('pageinit', '#dia23', function(){
     $.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
-  											output += '<li data-role="list-divider">' + value.gsx$dia.$t + '/10/2014 - ' + value.gsx$hora.$t + '</li>';
+  											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
