@@ -11,30 +11,58 @@
 	<script src="js/jquery.mobile-1.4.4.min.js"></script>
 	<script src="js/handlebars.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script src="js/gmaps.js"></script>
+
 	<script>
-		$( document ).on( "pageinit", "#mapa", function() {
-			var defaultLatLng = new google.maps.LatLng(-12.6594638, -39.0903214);
+var infowindow = null;
+    $(document).ready(function () { initialize();  });
 
-			drawMap(defaultLatLng); 
+    function initialize() {
 
-			function drawMap(latlng) {
-				var myOptions = {
-					zoom: 16,
-					center: latlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
+        var centerMap = new google.maps.LatLng(-12.6594638, -39.090321);
 
-				var map = new google.maps.Map(document.getElementById("map"), myOptions);
+        var myOptions = {
+            zoom: 16,
+            center: centerMap
+        }
 
-				var marker = new google.maps.Marker({
-					position: latlng,
-					map: map,
-					title: "Greetings!"
-				});
-			}
+        var map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-		});
+        setMarkers(map, sites);
+	    infowindow = new google.maps.InfoWindow({
+                content: "loading...",
+            });
+
+        var mapas = new google.maps.Locais();
+		mapas.setMap(map);
+    }
+
+    var sites = [
+	['Pavilhão de Aulas I', -12.658077, -39.089774],
+	['Pavilhão de Aulas II', -12.657396, -39.092800],
+	['Biblioteca Setorial', -12.657695, -39.091721],
+	['Prédio da Reitoria', -12.659385, -39.087923]
+];
+
+    function setMarkers(map, markers) {
+
+        for (var i = 0; i < markers.length; i++) {
+            var sites = markers[i];
+            var siteLatLng = new google.maps.LatLng(sites[1], sites[2]);
+            var marker = new google.maps.Marker({
+                position: siteLatLng,
+                map: map,
+                title: sites[0],
+                html: sites[0]
+            });
+
+            var contentString = "Some content";
+
+            google.maps.event.addListener(marker, "click", function () {
+                infowindow.setContent(this.html);
+                infowindow.open(map, this);
+            });
+        }
+    }
 	</script>
 </head>
 <body>
