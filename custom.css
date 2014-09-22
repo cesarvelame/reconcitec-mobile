@@ -1,5 +1,5 @@
 #logo{
-	max-width: 322px;
+	max-width: 100%;
 }
 .ui-title{
 	margin:0!important;
@@ -18,3 +18,9 @@
     overflow: visible !important;
     white-space: normal !important;
 }
+#mapa{
+	max-width: 100%;
+	height:100%;
+}
+
+#map-page, #map { width: 100%; height: 100%; padding: 0; }
