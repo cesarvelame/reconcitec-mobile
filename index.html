@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.4.min.css">
@@ -10,6 +10,32 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.mobile-1.4.4.min.js"></script>
 	<script src="js/handlebars.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/gmaps.js"></script>
+	<script>
+		$( document ).on( "pageinit", "#mapa", function() {
+			var defaultLatLng = new google.maps.LatLng(-12.6594638, -39.0903214);
+
+			drawMap(defaultLatLng); 
+
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 16,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+				var marker = new google.maps.Marker({
+					position: latlng,
+					map: map,
+					title: "Greetings!"
+				});
+			}
+
+		});
+	</script>
 </head>
 <body>
 <div data-role="page" id="home" data-url="home" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
@@ -20,7 +46,6 @@
            <img id="logo" data-url="home" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	   <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
@@ -33,6 +58,10 @@
 				<li><a href="#dia23">23 de Outubro</a></li>
 				<li><a href="#tudo">Programação Completa</a></li>
 			</ul>
+			<ul data-role="listview" id="menu" data-inset="true">
+				<li><a href="#sobre">Sobre a RECONCITEC</a></li>
+				<li><a href="#mapa">Mapa do Evento</a></li>
+			</ul>
 	</div>
 
 </div>
@@ -40,13 +69,11 @@
 <div data-role="page" data-url="sobre" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
 
 	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
        <h1>
          <a href="#home">
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
@@ -69,16 +96,30 @@
 
 </div>
 
-<div data-role="page" id="tudo" data-url="tudo" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+<div data-role="page" data-url="mapa" id="mapa" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
 
 	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
        <h1>
          <a href="#home">
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
+    </div>
+
+	<div role="main" class="ui-content" id="map">
+		<!-- map loads here... -->
+	</div>
+
+</div>
+
+<div data-role="page" id="tudo" data-url="tudo" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
+
+	<div data-role="header">
+       <h1>
+         <a href="#home">
+           <img id="logo" src="images/logo.png" alt="Logo" />
+         </a>
+       </h1>
     </div>
 
 	<div role="main" class="ui-content">
@@ -93,13 +134,11 @@
 <div data-role="page" id="dia21" data-url="dia21" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
 
 	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
        <h1>
          <a href="#home">
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
@@ -114,13 +153,11 @@
 <div data-role="page" id="dia22" data-url="dia22" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
 
 	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
        <h1>
          <a href="#home">
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
@@ -135,13 +172,11 @@
 <div data-role="page" id="dia23" data-url="dia23" data-title="III RECONCITEC - Reunião Anual de Ciência, Tecnologia, Inovação e Cultura no Recôncavo da Bahia">
 
 	<div data-role="header">
-	<a href="#home" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Voltar</a>
        <h1>
          <a href="#home">
            <img id="logo" src="images/logo.png" alt="Logo" />
          </a>
        </h1>
-	 <a href="#sobre" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Sobre</a>
     </div>
 
 	<div role="main" class="ui-content">
@@ -238,6 +273,5 @@ $(document).on('pageinit', '#dia23', function(){
 });
 
 </script>
-
 </body>
 </html>
