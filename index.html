@@ -139,8 +139,6 @@ var infowindow = null;
 	</div>
 
 	</div>
-	
-	
 
 </div>
 
@@ -221,12 +219,9 @@ var infowindow = null;
 </div>
 
 <script>
-
-
-
 $(document).on('pageinit', '#home', function(){
 		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/od6/public/values?alt=json";
-    $.getJSON(url, function (data){
+			$.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
   											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
@@ -242,7 +237,7 @@ $(document).on('pageinit', '#home', function(){
 
 $(document).on('pageinit', '#tudo', function(){
 		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/od6/public/values?alt=json";
-    $.getJSON(url, function (data){
+			$.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
   											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
@@ -258,7 +253,7 @@ $(document).on('pageinit', '#tudo', function(){
 
 $(document).on('pageinit', '#dia21', function(){
 		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D21";
-    $.getJSON(url, function (data){
+			$.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
   											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
@@ -274,7 +269,7 @@ $(document).on('pageinit', '#dia21', function(){
 
 $(document).on('pageinit', '#dia22', function(){
 		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D22";
-    $.getJSON(url, function (data){
+			$.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
   											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
@@ -290,7 +285,7 @@ $(document).on('pageinit', '#dia22', function(){
 
 $(document).on('pageinit', '#dia23', function(){
 		var url = "https://spreadsheets.google.com/feeds/list/1YTB1sToJ5NXqzJkas1Wbkt1i9LjrdfQ9OaOcIRUYvCY/1/public/values?alt=json&sq=dia%3D23";
-    $.getJSON(url, function (data){
+			$.getJSON(url, function (data){
                   var output = '';
                       $.each(data.feed.entry, function (index, value) {
   											output += '<li data-role="list-divider">' + value.gsx$data.$t + ' - ' + value.gsx$hora.$t + '</li>';
@@ -303,17 +298,14 @@ $(document).on('pageinit', '#dia23', function(){
 
             });
 });
-
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-55154763-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>
