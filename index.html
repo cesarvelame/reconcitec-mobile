@@ -228,7 +228,7 @@ $(document).on('pageinit', '#home', function(){
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
-												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+												output += '<p class="multi"><img src="images/local.png"/> <i>' + value.gsx$local.$t + '</i></p></li>';
 						});
                       $('#busca').html(output).listview('refresh');
 
