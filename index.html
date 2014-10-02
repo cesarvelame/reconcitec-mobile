@@ -19,11 +19,12 @@ var infowindow = null;
 
     function initialize() {
 
-        var centerMap = new google.maps.LatLng(-12.6594638, -39.090321);
+        var centerMap = new google.maps.LatLng(-12.658312, -39.0914302);
 
         var myOptions = {
             zoom: 16,
-            center: centerMap
+            center: centerMap,
+			mapTypeId: google.maps.MapTypeId.SATELLITE
         }
 
         var map = new google.maps.Map(document.getElementById("map"), myOptions);
@@ -40,8 +41,7 @@ var infowindow = null;
     var sites = [
 	['Pavilhão de Aulas I', -12.658077, -39.089774],
 	['Pavilhão de Aulas II', -12.657396, -39.092800],
-	['Biblioteca Setorial', -12.657695, -39.091721],
-	['Prédio da Reitoria', -12.659385, -39.087923]
+	['Biblioteca Setorial', -12.657695, -39.091721]
 ];
 
     function setMarkers(map, markers) {
@@ -89,7 +89,7 @@ var infowindow = null;
 			</ul>
 			<ul data-role="listview" id="menu" data-inset="true">
 				<li><a href="#sobre">Sobre a RECONCITEC</a></li>
-		   <!-- <li><a href="#mapa">Mapa do Evento</a></li> -->
+				<li><a href="#mapa">Mapa do Evento</a></li>
 			</ul>
 	</div>
 
@@ -244,7 +244,7 @@ $(document).on('pageinit', '#tudo', function(){
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
-												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+												output += '<p class="multi"><img src="images/local.png"/> <i>' + value.gsx$local.$t + '</i></p></li>';
 						});
                       $('#listview').html(output).listview('refresh');
 
@@ -260,7 +260,7 @@ $(document).on('pageinit', '#dia21', function(){
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
-												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+												output += '<p class="multi"><img src="images/local.png"/> <i>' + value.gsx$local.$t + '</i></p></li>';
 						});
                       $('#listview21').html(output).listview('refresh');
 
@@ -276,7 +276,7 @@ $(document).on('pageinit', '#dia22', function(){
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
-												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+												output += '<p class="multi"><img src="images/local.png"/> <i>' + value.gsx$local.$t + '</i></p></li>';
 						})
                       $('#listview22').html(output).listview('refresh');
 
@@ -292,7 +292,7 @@ $(document).on('pageinit', '#dia23', function(){
 												output += '<li><p class="multi"><strong>' + value.gsx$tipo.$t +  ': ' + value.gsx$titulo.$t + '</strong></p>';
 												output += '<p class="multi">' + value.gsx$autor.$t + '</p>';
 												output += '<p class="multi">' + value.gsx$extras.$t + '</p>';
-												output += '<p class="multi">' + value.gsx$local.$t + '</p></li>';
+												output += '<p class="multi"><img src="images/local.png"/> <i>' + value.gsx$local.$t + '</i></p></li>';
 						});
                       $('#listview23').html(output).listview('refresh');
 
